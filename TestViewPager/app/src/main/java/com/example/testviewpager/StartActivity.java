@@ -33,9 +33,11 @@ public class StartActivity extends AppCompatActivity {
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if (position == 1){
                     tab.setText("Weather");
+                    tab.setIcon(R.drawable.ic_baseline_wb_sunny_24);
                 }
                 else{
                     tab.setText("Search");
+                    tab.setIcon(R.drawable.ic_baseline_search_24);
                 }
             }
         });
